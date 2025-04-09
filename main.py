@@ -19,7 +19,8 @@ def main():
     print(f"Found {word_count} total words")
     print("--------- Character Count -------")
     for c in character_count:
-        print (f"{c[0]}: {c[1]}")
+        if c[0].isalpha():
+            print (f"{c[0]}: {c[1]}")
     print("============= END ===============")
 
 main()
