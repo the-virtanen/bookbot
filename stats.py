@@ -12,3 +12,7 @@ def get_num_characters(text):
             num_dict[t] = 1
     
     return num_dict
+
+def sort_characters(char_dict):
+    sorted_characters = sorted(char_dict.items(), key=lambda x: x[1], reverse=True)
+    return sorted_characters
